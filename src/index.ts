@@ -20,6 +20,7 @@ export async function getVatNumberInfos(vatNumber: string): Promise<Result> {
       valid: true,
     }
   } catch (err) {
+    console.log(err)
     return {
       fullVatNumber: vatNumber,
       message: 'The VAT number provided is not valid',
